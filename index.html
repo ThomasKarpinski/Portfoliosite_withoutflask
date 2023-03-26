@@ -16,7 +16,7 @@
         <link rel="stylesheet" type="text/css" href="footer.css">
         <link rel="stylesheet" type="text/css" href="email.css">
         <link rel="stylesheet" type="text/css" href="advanced_animation.css">
-        <link rel="stylesheet" type="text/css" href="toggle.css">
+        <link rel="stylesheet" type="text/css" href="toggler.css">
         <link rel="stylesheet" type="text/css" href="popup.css">
 
 
@@ -24,13 +24,20 @@
               integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     </head>
     <body>
-    <div class="dropdown">
-        <img onclick="toggleDropdown()" class="dropbtn" src="grafiki_pod_strone/menu.svg" alt="menu">
-        <div id="myDropdown" class="dropdown-content">
-            <a onclick="scrollToSection_Home()" class="navbar_b">HOME</a>
-            <a onclick="scrollToSection()" class="navbar_b">ABOUT ME</a>
-            <a onclick="link3()" class="navbar_b">PORTFOLIO</a>
-            <a onclick="scrollToSection_K()" class="navbar_b">CONTACT</a>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><button onclick="scrollToSection_Home()" class="navbar_b">HOME</button></li>
+                        <li><button onclick="scrollToSection()" class="navbar_b but1">ABOUT ME</button></li>
+                        <li><button onclick="l1()" class="navbar_b">PORTFOLIO</button></li>
+                        <li><button onclick="scrollToSection_K()" class="navbar_b">CONTACT</button></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
         <nav>
@@ -79,7 +86,7 @@
         <section class="sec3">
             <div class="curves2">
                 <div class="shape1"></div>
-                <div class="slogan"><h2 class="g">the best version of reality reflection</h2></div>
+                <div class="slogan"><h2 style="text-align: center" class="g">the best version of reality reflection</h2></div>
                 <div class="shape2"></div>
             </div>
         </section>
@@ -99,7 +106,7 @@
         </section>
         <section class="sec5">
             <div class="over">
-            <h2 class="slogan2">capturing the beauty in everyday creation</h2>
+            <h2 style="text-align: center;" class="slogan2">capturing the beauty in everyday creation</h2>
                 <div class="more2">
                     <button onclick="showInfoWindow_K()" class="more">CONTACT</button>
                     <div id="infoWindow2">
@@ -132,8 +139,8 @@
             <img onclick="sesja3()" class="x4d" src="zdjęcia_portfolio/gabrysia.webp" alt="caricatures">
             <img onclick="sesja4()" class="x5d" src="zdjęcia_portfolio/zofia1.webp" alt="portraits">
         </div>
-        <div class="more3"><button onclick="l1()" class="more">PORTFOLIO</button></div>
     </section>
+    <section class="sec7"><div class="more3"><button onclick="l1()" class="more">PORTFOLIO</button></div></section>
     <footer>
         <div class="foot_icons">
             <img class="f_i" onclick="l1()" src="grafiki_pod_strone/1x/instk2.svg" alt="">
@@ -144,7 +151,7 @@
 
             </form>
             <div class="f_links">
-                <a onclick="showInfoWindow()">TERMS AND CONDITIONS</a>
+                <a class="T_C" onclick="showInfoWindow()">TERMS AND CONDITIONS</a>
                 <div id="infoWindow">
                     <h3 style="color: black">TERMS AND CONDITIONS</h3>
                     <p style="color: black">ALL PHOTOS AND GRAPHICS ON THE SITE ARE ORIGINAL.

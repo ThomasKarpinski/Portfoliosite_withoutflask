@@ -25,17 +25,24 @@ footer {
 .foot_icons {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    gap: 30%;
     height: 5vh;
     width: 10vw;
 }
 
 #f_text1 {
     color: white;
+    text-align: center;
 }
 
 .f_links {
     margin-bottom: 5%;
     color: white;
+}
+
+.T_C {
+    text-align: center;
 }
 
 .f_links a:nth-child(n) {

@@ -1,4 +1,6 @@
-
+html {
+    width: auto; !important;
+}
 
 @keyframes appearFromTop{
     0%{
@@ -143,7 +145,7 @@ nav{
 
 .curves1 {
     z-index: 1;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: url("grafiki_pod_strone/curves1.svg") no-repeat;
     background-size: cover;
@@ -207,7 +209,7 @@ nav{
 
 .curves2 {
     z-index: 1;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background: url("grafiki_pod_strone/curves2.svg") no-repeat;
     background-size: cover;
@@ -412,4 +414,15 @@ gap: 10%;
         margin-right: 10%;
     }
 
+}
+@media screen and (max-width: 768px){
+
+    .more3 {
+        margin-right: 10%;
+    }
+
+}
+
+html {
+    width: 90vw;
 }

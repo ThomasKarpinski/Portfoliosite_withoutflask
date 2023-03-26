@@ -10,10 +10,10 @@
 
 .sec6 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+
     height: 100vh;
     width: 100vw;
 }
@@ -103,6 +103,8 @@ margin-left: 5%}
         flex-direction: column;
     }
 
+
+
 }
 @media screen and (max-width: 475px){
 
@@ -119,6 +121,10 @@ margin-left: 5%}
         padding-left: 2%;
         padding-right: 2%;
         width: 98vw;
+    }
+
+    .photos {
+        width: 80vw; !important;
     }
 
 }
