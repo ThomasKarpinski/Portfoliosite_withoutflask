@@ -1,0 +1,41 @@
+.more {
+    position: relative;
+    color: var(--second-leading-color);
+    border: 2px solid var(--second-leading-color);
+    background-color: white;
+    font-size: 24px;
+    letter-spacing: 4px;
+    padding: 10px;
+}
+
+.more::after, .more::before {
+    background-color: transparent;
+    background-image: radial-gradient(
+            var(--second-leading-color),
+            transparent
+    );
+    background-size: 20px 20px;
+    border: 2px solid var(--second-leading-color);
+    content: "";
+    position: absolute;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: transform 0.3s ease;
+}
+
+.more:hover::after {
+    transform: translate(8px, 8px);
+    background-color: white;
+}
+
+.more:hover::before {
+    transform: translate(8px, 8px);
+}
+
+.more:active{
+    color: white;
+    background-color: var(--second-leading-color);
+}

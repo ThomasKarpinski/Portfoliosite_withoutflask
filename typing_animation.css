@@ -1,0 +1,38 @@
+@keyframes appearFromLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+        border-radius: 75%;
+    }
+    30%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    80%{
+        border-radius: 0;
+    }
+}
+
+.typ {
+    padding-left: 20px;
+    position: absolute;
+    background-color: #00B4AE;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    animation: appearFromLeft 2s 0.5s both;
+}
+
+#text {
+    border-right: solid white 4px;
+    height: 35px;
+    animation: appearFromLeft 3s 0.5s both;
+}
+
+@media screen and (max-width: 768px) {
+
+    #text {
+        height: 200%;
+    }
+}
