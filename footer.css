@@ -2,7 +2,6 @@ footer {
     background-color: var(--second-leading-color);
     height: 50vh;
     width: 100vw;
-    margin-top: 10%;
     display: flex;
     justify-content: center;
     flex-direction: column;

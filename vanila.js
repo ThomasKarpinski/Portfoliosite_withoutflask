@@ -4,7 +4,9 @@ VanillaTilt.init(document.querySelector(".background"), {
     "max-glare": 0.5,
     startX: 45,
     startY: 45,
-    reset: false
+    reset: false,
+    "full-page-listening": true
+
 });
 VanillaTilt.init(document.querySelector(".slider"), {
     glare: true,
@@ -12,6 +14,7 @@ VanillaTilt.init(document.querySelector(".slider"), {
     startX: 45,
     startY: 45,
     reset: false,
+    "full-page-listening": true
 });
 VanillaTilt.init(document.querySelector(".slogan"), {
     glare: true,

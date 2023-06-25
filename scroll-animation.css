@@ -1,0 +1,47 @@
+.scroll-animation {
+    opacity: 0;
+    transform: translateY(-200px);
+    transition: opacity 0.5s, transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+.scroll-animation.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-animation2 {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.5s, transform 0.5s;
+    transition-delay: 1s;
+}
+
+.scroll-animation2.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-animation3 {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s, transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+.scroll-animation3.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-animation4 {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.5s, transform 0.5s;
+    transition-delay: 0.5s;
+}
+
+.scroll-animation4.show {
+    opacity: 1;
+    transform: translateX(0);
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>PORTFOLIO</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+    </style>
+
+    <link rel="icon" href="grafiki_pod_strone/polaroid2.png" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="button.css">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="share_btn.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" type="text/css" href="email.css">
+    <link rel="stylesheet" type="text/css" href="toggler.css">
+    <link rel="stylesheet" type="text/css" href="popup.css">
+    <link rel="stylesheet" type="text/css" href="grid_galery.css">
+    <link rel="stylesheet" type="text/css" href="sortowanie.css">
+    <link rel="stylesheet" type="text/css" href="waves.css">
+
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css"
+            rel="stylesheet"
+    />
+
+</head>
+<body>
+<div class="menu-wrap">
+    <input type="checkbox" class="toggler">
+    <div class="hamburger"><div></div></div>
+    <div class="menu">
+        <div>
+            <div>
+                <ul>
+                    <li><button class="navbar_b"><a style="text-decoration: none; color: white"  href="index.html">HOME</a></button></li>
+                    <li><button class="navbar_b but1"><a style="text-decoration: none; color: white"  href="about_me.html">ABOUT ME</a></button></li>
+                    <li><button class="navbar_b"><a style="text-decoration: none; color: white" href="galery.html">PORTFOLIO</a></button></li>
+                    <li><button onclick="showInfoWindow_K()" class="navbar_b">CONTACT</button></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<nav>
+    <img onclick="link1()" class="logo box--from-bottom" src="grafiki_pod_strone/pstk3.png" alt="logo">
+    <div class="navbar_buttons">
+        <button class="navbar_b"><a style="text-decoration: none; color: white"  href="index.html">HOME</a></button>
+        <button class="navbar_b but1"><a style="text-decoration: none; color: white"  href="about_me.html">ABOUT ME</a></button>
+        <button class="navbar_b"><a style="text-decoration: none; color: white" href="galery.html">PORTFOLIO</a></button>
+        <button onclick="showInfoWindow_K()" class="navbar_b">CONTACT</button>
+    </div>
+</nav>
+<section class="sort">
+<div class="btn-group shadow-0 mb-2">
+    <button
+            class="more"
+            style="font-size: 24px"
+            type="button"
+            id="dropdownMenuButton"
+            data-mdb-toggle="dropdown"
+            aria-expanded="false"
+    >
+        SORT  ⇩
+    </button>
+    <ul class="category-list dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <li class="navbar_b" onclick="showImages('cars')">CARS</li>
+        <li class="navbar_b" onclick="showImages('landscapes')">LANDSCAPES</li>
+        <li class="navbar_b" onclick="showImages('products')">PRODUCTS</li>
+        <li class="navbar_b" onclick="showImages('graphics')">GRAPHICS</li>
+        <li class="navbar_b" onclick="showImages('portraits')">PORTRAITS</li>
+        <li class="navbar_b" onclick="showImages('events')">EVENTS</li>
+        <li onclick="showImages('events')"> </li>
+    </ul>
+</div>
+</section>
+<section class="grid">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="column image" data-category="cars">
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/dsc1005-1.webp" />
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/dsc1006-1.webp" />
+            </div>
+            <div class="column image" data-category="cars">
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/psx-20220326-215638.webp" />
+                <img src="zdjęcia_portfolio/speed1.webp" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="column image" data-category="landscapes">
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/1655232617531.webp" />
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/1656362737774.webp" />
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/1687111481016.webp" />
+            </div>
+            <div class="column image" data-category="landscapes">
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/1687111481008.webp" />
+                <img src="zdjęcia_portfolio/city.webp" />
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/1687111481033.webp" />
+            </div>
+            <div class="column image" data-category="landscapes">
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/1687111481025.webp" />
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/1687111481042.webp" />
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/1687111481050.webp" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="column image" data-category="products">
+                <img src="zdjęcia_portfolio/produkt1.webp" />
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/dsc1156.webp" />
+            </div>
+            <div class="column image" data-category="products">
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/dsc1196.webp" />
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/dsc2325.webp" />
+            </div>
+            <div class="column image" data-category="products">
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/dsc2316.webp" />
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/dsc2338.webp" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="column image" data-category="graphics">
+                <img src="zdjęcia_portfolio/gabrysia.webp" />
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/1653766860442.webp" />
+            </div>
+            <div class="column image" data-category="graphics">
+                <img src="zdjęcia_portfolio/1653767135902.webp" />
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/firstcomposition-2.webp" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="column image" data-category="portraits">
+                <img src="zdjęcia_portfolio/zofia1.webp" />
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/dsc0890-7.webp" />
+            </div>
+            <div class="column image" data-category="portraits">
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/06.webp" />
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/1645216303293.webp" />
+            </div>
+            <div class="column image" data-category="portraits">
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/dsc1392.webp" />
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/lotofmotyle.webp" />
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="column image" data-category="events">
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/1653766114130.webp" />
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/dsc2335.webp" />
+            </div>
+            <div class="column image" data-category="events">
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/dsc1926.webp" />
+                <img src="zdjęcia_portfolio/zdjęcia_portfolio_webp/dsc2388.webp" />
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="header">
+    <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" /></defs>
+        <g class="parallax">
+            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(57, 27, 84,0.7)" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(57, 27, 84,0.5)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(57, 27, 84,0.3)" />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="rgb(57, 27, 84)" />
+        </g>
+    </svg>
+</div>
+
+<footer>
+    <div class="foot_icons">
+        <img class="f_i" onclick="l1()" src="grafiki_pod_strone/1x/instk2.svg" alt="">
+        <img class="f_f" src="grafiki_pod_strone/1x/facek2.svg" alt="">
+    </div>
+    <div class="f_rest">
+        <div id="f_text1">Made with ♥ by Profound Studio</div>
+
+
+        <div class="f_links">
+            <a class="T_C" onclick="showInfoWindow()">TERMS AND CONDITIONS</a>
+            <div id="infoWindow">
+                <h3 style="color: black">TERMS AND CONDITIONS</h3>
+                <p style="color: black">ALL PHOTOS AND GRAPHICS ON THE SITE ARE ORIGINAL.
+                    IF YOU WANT TO SHARE A PHOTO, SEND THAT PERSON A LINK TO THE PROVIDED
+                    INSTAGRAM ACCOUNT OR COPY THE PAGE ADDRESS 😉</p>
+                <div style="color: black" id="closeButton" onclick="closeInfoWindow()">X</div>
+            </div>
+            <a href="about_me.html">ABOUT ME</a>
+            <a href="galery.html">PORTFOLIO</a>
+            <a onclick="showInfoWindow_K()">CONTACT</a>
+            <div id="infoWindow2">
+                <h2>mail: profoundstudiotk@gmail.com</h2>
+                <h2>IG: profound.studio.tk</h2>
+                <div style="color: black" id="closeButton" onclick="closeInfoWindow_K()">X</div>
+            </div>
+        </div>
+    </div>
+    <div class="f_bottom">PS@All Rights Reserved</div>
+</footer>
+</body>
+<script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"
+></script>
+<script src="navbar.js"></script>
+<script src="rightnavbar.js"></script>
+<script src="app.js"></script>
+<script src="popup.js"></script>
+<script src="links.js"></script>
+<script src="scrolling.js"></script>
+<script src="sortowanie.js"></script>
+
+<script src="gsapscrollinganimations.js"></script>
+
+</html>

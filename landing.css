@@ -1,5 +1,5 @@
 html {
-    width: auto; !important;
+    width: 80vw !important;
 }
 
 @keyframes appearFromTop{
@@ -231,6 +231,7 @@ nav{
 .g:hover {
     transform-style: preserve-3d;
     transform: perspective(4000px) translateZ(300px);
+    filter: drop-shadow(8px 8px 2px rgba(255, 255, 255, 0.27));
 }
 
 @keyframes moving-shape1{
@@ -260,20 +261,20 @@ nav{
     position: relative;
     left: 20%;
     bottom: 5%;
-    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    border-radius: 50%;
     height: 150px;
     width: 150px;
-    background: radial-gradient(var(--second-leading-color), var(--leading-theme-color));
+    background: linear-gradient(rgb(255, 255, 255) 0%, rgb(175, 133, 191) 50%, rgb(37, 17, 54) 100%);
 }
 
 .shape2 {
     position: relative;
     left: -10%;
     bottom: 20%;
-    border-radius: 38% 62% 63% 37% / 70% 33% 67% 30%;
+    border-radius: 50%;
     height: 150px;
     width: 150px;
-    background: radial-gradient(var(--second-leading-color), var(--leading-theme-color));
+    background: linear-gradient(rgb(255, 255, 255) 0%, rgb(175, 133, 191) 50%, rgb(37, 17, 54) 100%);
 }
 
 .shape1{
@@ -361,8 +362,8 @@ gap: 10%;
 
 @media screen and (max-width: 768px){
 
-    .sec5 .over .overlay{
-        height: 20vh;
+    .over{
+        height: 10vh !important;
     }
 
 }
@@ -423,6 +424,24 @@ gap: 10%;
 
 }
 
-html {
-    width: 90vw;
+@media screen and (max-width: 1290px){
+
+    .shape1, .shape2 {
+        height: 100px;
+        width: 100px;
+        min-height: 100px;
+        min-width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+
+    .shape1, .shape2 {
+        height: 50px;
+        width: 50px;
+        min-height: 50px;
+        min-width: 50px;
+    }
+
 }

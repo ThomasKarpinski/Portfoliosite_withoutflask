@@ -35,4 +35,9 @@
     #text {
         height: 200%;
     }
+
+    .typ {
+        transform: translateY(15%);
+    }
+
 }

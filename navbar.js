@@ -1,5 +1,5 @@
 const link1 = () =>{
-    location.href = "/";
+    location.href = "index.html";
 }
 
 const link3 = () =>{

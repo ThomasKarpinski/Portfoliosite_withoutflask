@@ -1,4 +1,4 @@
-const l1 = () =>{
+const l = () =>{
     window.open("https://www.instagram.com/profound.studio.tk/",'_blank');
 }
 const l2 = () =>{

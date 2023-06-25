@@ -7,7 +7,15 @@
     letter-spacing: 4px;
     padding: 10px;
 }
-
+.more a{
+    color: var(--second-leading-color);
+}
+.more a:hover{
+    color: var(--second-leading-color);
+}
+.more a:active{
+    color: white;
+}
 .more::after, .more::before {
     background-color: transparent;
     background-image: radial-gradient(
