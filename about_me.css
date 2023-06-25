@@ -144,7 +144,8 @@ video {
 }
 
 .card-list::-webkit-scrollbar {
-
+    width: 10px;
+    height: 10px;
 }
 
 .card {
@@ -206,6 +207,10 @@ video {
     }
     .card:not(:first-child) {
         margin-left: -10px;
+    }
+    .card-list::-webkit-scrollbar {
+        width: 0;
+        height: 0;
     }
 
 }
