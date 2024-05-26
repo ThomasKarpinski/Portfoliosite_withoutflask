@@ -63,7 +63,7 @@ nav{
 }
 
 .description {
-    align-content: flex-end;
+    align-content: center;
     text-transform: uppercase;
     color: white;
     font-size: 26px;
